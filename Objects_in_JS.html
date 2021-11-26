@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Objects in JavaScript</title>
+	<style type="text/css">
+		body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+ background-image: linear-gradient(to bottom, #d16bce, #c472d6, #b778dc, #a97fe1, #9a84e5, #9283e8, #8981ea, #7f80ed, #7b78f1, #7770f5, #7568f8, #735ffb);
+		}
+	</style>
+</head>
+<body>
+	<p><b>Taking look at Objects in JavaScript</b></p>
+<script type="text/javascript">
+	function Person(FirstName,LastName,OfficeAddress){
+		this.FirstName=FirstName;
+		this.LastName=LastName;
+		this.OfficeAddress=OfficeAddress;
+	}
+	let Person1=new Person('Aman','Seth','IBM_Hyderabad');
+	let Person2=new Person('Shubham','Kumar','Cisco_Bangalore');
+	let Person3=new Person('Abhishek','Singh','Wipro_Mumbai');
+	console.log("Person-1");
+	console.log(Person1.FirstName+" "+Person1.LastName+" "+Person1.OfficeAddress);
+	console.log("Person-2");
+	console.log(Person2.FirstName+" "+Person2.LastName+" "+Person2.OfficeAddress);
+	console.log("Person-3");
+	console.log(Person3.FirstName+" "+Person3.LastName+" "+Person3.OfficeAddress);
+</script>
+</body>
+</html>
